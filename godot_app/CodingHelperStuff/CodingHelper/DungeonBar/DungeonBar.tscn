@@ -17,14 +17,21 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
 color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Name" type="Label" parent="ColorRect"]
 anchor_top = 0.5
 anchor_bottom = 0.5
+margin_left = 10.0
 margin_top = -7.0
-margin_right = 40.0
+margin_right = 113.0
 margin_bottom = 7.0
 text = "To hell and back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="MaxFloor" type="Label" parent="ColorRect"]
 anchor_left = 0.5
