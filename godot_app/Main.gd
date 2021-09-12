@@ -1,16 +1,15 @@
 extends Node
 
+onready var debug_panel := $CanvasLayer/DebugPanel
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	var email := "test@email.com"
+	var pwd := "password"
+	
+	debug_panel.write_msg("Authenticating user %s" % email)
+	var err:NakamaException = yield(Server.authenticate_async(email, pwd), "completed")
+	
+	if not err:
+		debug_panel.write_msg("Atuhenticated user %s successfully" % email)
+	else:
+		debug_panel.write_msg("Atuhenticate failed, reason: %s" % err.message)
