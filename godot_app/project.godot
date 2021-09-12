@@ -106,7 +106,8 @@ config/icon="res://icon.png"
 
 ApiSimulator="*res://CodingHelperStuff/ApiSimulator/ApiSimulator.gd"
 Nakama="*res://addons/com.heroiclabs.nakama/Nakama.gd"
-Server="*res://Singletons/Server.gd"
+Authentication="*res://Singletons/ServerSingletons/Authentication.gd"
+ServerConnection="*res://Singletons/ServerSingletons/ServerConnection.gd"
 
 [display]
 
