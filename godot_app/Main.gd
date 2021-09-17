@@ -5,6 +5,9 @@ onready var debug_panel := $CanvasLayer/DebugPanel
 func _ready():
 	yield(authenticate_user(), "completed")
 	yield(connect_to_server(), "completed")
+	yield(ServerConnection.write_data_async({"test":"best"}), "completed")
+	var data = yield(ServerConnection.get_data_async(), "completed")
+	debug_panel.write_msg(JSON.print(data))
 
 
 func connect_to_server() -> void:

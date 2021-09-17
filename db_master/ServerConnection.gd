@@ -1,8 +1,8 @@
 extends Node
 
-const KEY:= "test_key"
+const KEY := "test_key"
 
-var _session: NakamaSession
+var _session : NakamaSession
 
 var _client := Nakama.create_client(KEY)
 
@@ -50,7 +50,7 @@ func connect_to_server_async() -> int:
 func authenticate_async(email:String, pwd:String) -> NakamaException:
 	var err = null
 	
-	var new_session:NakamaSession = yield(_client.authenticate_email_async(email, pwd, "Cofi", true), "completed")
+	var new_session:NakamaSession = yield(_client.authenticate_email_async(email, pwd, "DBAdmin", true), "completed")
 	
 	if not new_session.is_exception():
 		_session = new_session
