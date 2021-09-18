@@ -9,15 +9,15 @@ var _client := Nakama.create_client(KEY)
 var _socket:NakamaSocket
 
 
-func write_data_async(data:Dictionary) -> void:
+func write_data_async(table_name:String, data:Dictionary) -> void:
 	yield(_client.write_storage_objects_async(
 		_session,
 		[
 			NakamaWriteStorageObject.new(
-				"some_data",
-				"data",
-				1,
-				1,
+				"game_data",
+				table_name,
+				DbInfo.READ_PREMISSIONS.PUBLIC_READ,
+				DbInfo.WRITE_PREMISSIONS.OWNER_WRITE,
 				JSON.print(data),
 				""
 			)

@@ -107,6 +107,7 @@ config/icon="res://icon.png"
 Nakama="*res://addons/com.heroiclabs.nakama/Nakama.gd"
 ServerConnection="*res://ServerConnection.gd"
 Models="*res://Models/Models.gd"
+DbInfo="*res://DBInfo.gd"
 
 [physics]
 

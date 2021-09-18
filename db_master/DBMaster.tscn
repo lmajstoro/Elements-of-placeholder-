@@ -13,13 +13,34 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Container" type="VBoxContainer" parent="Control"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control"]
+visible = false
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -20.0
-margin_top = 70.0
+margin_top = 80.0
 margin_right = 20.0
-margin_bottom = 110.0
+margin_bottom = 120.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Container" type="VBoxContainer" parent="Control/VBoxContainer2"]
+margin_right = 115.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AddRecord" type="Button" parent="Control/VBoxContainer2"]
+margin_top = 4.0
+margin_right = 115.0
+margin_bottom = 24.0
+text = "Add to database"
+
+[node name="CurrentModelJson" type="Label" parent="Control/VBoxContainer2"]
+margin_top = 28.0
+margin_right = 115.0
+margin_bottom = 42.0
 
 [node name="DebugPanel" parent="Control" instance=ExtResource( 2 )]
 anchor_top = 1.0
@@ -37,3 +58,38 @@ margin_top = -154.0
 margin_right = 107.0
 margin_bottom = -124.0
 text = "DEBUG PANEL:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+margin_right = 194.0
+margin_bottom = 46.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Control/VBoxContainer"]
+margin_right = 194.0
+margin_bottom = 14.0
+text = "Table name:"
+
+[node name="TableNames" type="OptionButton" parent="Control/VBoxContainer"]
+margin_top = 18.0
+margin_right = 194.0
+margin_bottom = 38.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShowRecords" type="Button" parent="Control/VBoxContainer"]
+margin_top = 42.0
+margin_right = 194.0
+margin_bottom = 62.0
+text = "Show all records"
+
+[node name="AddNewRecord" type="Button" parent="Control/VBoxContainer"]
+margin_top = 66.0
+margin_right = 194.0
+margin_bottom = 86.0
+text = "Add new record"

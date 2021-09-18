@@ -13,10 +13,19 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="."]
-margin_right = 132.0
+margin_right = 58.0
 margin_bottom = 14.0
 
 [node name="LineEdit" type="LineEdit" parent="."]
 margin_top = 18.0
-margin_right = 132.0
+margin_right = 58.0
 margin_bottom = 42.0
+
+[node name="OptionButton" type="OptionButton" parent="."]
+visible = false
+margin_top = 46.0
+margin_right = 72.0
+margin_bottom = 66.0
+text = "False"
+items = [ "False", null, false, 0, null, "True", null, false, 1, null ]
+selected = 0
