@@ -1,0 +1,139 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/pets/water_dragon.png" type="Texture" id=1]
+[ext_resource path="res://ui_components/general/HSeparator.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ui_components/general/GridContainer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ui_components/character/AvailableItemBox.tscn" type="PackedScene" id=4]
+[ext_resource path="res://ui_components/general/StatsContainer.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/fonts/Poppins-Regular.ttf" type="DynamicFontData" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.490196, 0.490196, 0.490196, 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = ExtResource( 6 )
+
+[node name="Pet" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_top = 0.07
+anchor_right = 1.0
+anchor_bottom = 0.58
+margin_right = -0.320068
+margin_bottom = 0.32
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 7
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StatsContainer" parent="." instance=ExtResource( 5 )]
+anchor_left = 0.1
+anchor_top = 0.58
+anchor_right = 0.9
+anchor_bottom = 0.73
+
+[node name="HSeparator" parent="." instance=ExtResource( 2 )]
+anchor_top = 0.75
+anchor_bottom = 0.76
+
+[node name="GridContainer" parent="." instance=ExtResource( 3 )]
+anchor_top = 0.78
+
+[node name="AvailableItemBox" parent="GridContainer" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 14.0
+margin_right = 114.0
+margin_bottom = 100.0
+
+[node name="AvailableItemBox2" parent="GridContainer" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 146.0
+margin_right = 246.0
+margin_bottom = 100.0
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.05
+anchor_top = 0.025
+anchor_right = 0.95
+anchor_bottom = 0.075
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+anchor_left = 0.01
+anchor_right = 0.99
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Panel/HBoxContainer"]
+margin_right = 103.0
+margin_bottom = 64.0
+size_flags_vertical = 7
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Level: 99"
+align = 1
+valign = 1
+
+[node name="ColorRect" type="ColorRect" parent="Panel/HBoxContainer"]
+margin_left = 107.0
+margin_right = 109.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 2, 0 )
+color = Color( 0.490196, 0.490196, 0.490196, 1 )
+
+[node name="Label" type="Label" parent="Panel/HBoxContainer"]
+margin_left = 113.0
+margin_right = 524.0
+margin_bottom = 64.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Water dragon"
+align = 1
+valign = 1
+
+[node name="ColorRect2" type="ColorRect" parent="Panel/HBoxContainer"]
+margin_left = 528.0
+margin_right = 530.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 2, 0 )
+color = Color( 0.490196, 0.490196, 0.490196, 1 )
+
+[node name="Label3" type="Label" parent="Panel/HBoxContainer"]
+margin_left = 534.0
+margin_right = 635.0
+margin_bottom = 64.0
+size_flags_vertical = 7
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Exp: 1234"
+align = 1
+valign = 1

@@ -99,22 +99,24 @@ _global_script_class_icons={
 [application]
 
 config/name="Elements RPG"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://screens/Main.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-ApiSimulator="*res://CodingHelperStuff/ApiSimulator/ApiSimulator.gd"
 Nakama="*res://addons/com.heroiclabs.nakama/Nakama.gd"
-ServerConnection="*res://Singletons/ServerSingletons/ServerConnection.gd"
+ServerConnection="*res://singletons/server/ServerConnection.gd"
+Events="*res://singletons/client/Events.gd"
 
 [display]
 
-window/size/width=360
-window/size/height=720
+window/size/width=720
+window/size/height=1280
+window/size/test_width=400
+window/size/test_height=800
 window/handheld/orientation="portrait"
 window/stretch/mode="2d"
-window/stretch/aspect="keep"
+window/stretch/aspect="expand"
 
 [input]
 

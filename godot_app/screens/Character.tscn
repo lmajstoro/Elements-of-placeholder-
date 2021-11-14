@@ -1,0 +1,213 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/character/relic_icon.png" type="Texture" id=1]
+[ext_resource path="res://assets/character/blessing_icon.png" type="Texture" id=2]
+[ext_resource path="res://assets/character/question-mark.png" type="Texture" id=3]
+[ext_resource path="res://assets/character/char_outline.jpg" type="Texture" id=4]
+[ext_resource path="res://assets/character/body_armor_icon.png" type="Texture" id=5]
+[ext_resource path="res://ui_components/character/EquippedItemBox.tscn" type="PackedScene" id=6]
+[ext_resource path="res://ui_components/general/GridContainer.tscn" type="PackedScene" id=7]
+[ext_resource path="res://ui_components/general/StatsContainer.tscn" type="PackedScene" id=8]
+[ext_resource path="res://ui_components/general/HSeparator.tscn" type="PackedScene" id=9]
+[ext_resource path="res://ui_components/character/AvailableItemBox.tscn" type="PackedScene" id=10]
+
+[node name="Character" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.41422
+margin_top = -0.083374
+margin_right = 1.41418
+margin_bottom = -0.083374
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Character" type="TextureRect" parent="."]
+anchor_left = 0.3
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.45
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EquippedItemsContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.065
+anchor_top = 0.1
+anchor_right = 0.21
+anchor_bottom = 0.6
+custom_constants/separation = 30
+alignment = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BodyArmor" parent="EquippedItemsContainer" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 104.0
+margin_bottom = 104.0
+default_icon = ExtResource( 5 )
+
+[node name="Relic" parent="EquippedItemsContainer" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 134.0
+margin_right = 104.0
+margin_bottom = 238.0
+default_icon = ExtResource( 1 )
+
+[node name="Blessing" parent="EquippedItemsContainer" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 268.0
+margin_right = 104.0
+margin_bottom = 372.0
+default_icon = ExtResource( 2 )
+
+[node name="TBD" parent="EquippedItemsContainer" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 402.0
+margin_right = 104.0
+margin_bottom = 506.0
+default_icon = ExtResource( 3 )
+
+[node name="TBD_ALSO" parent="EquippedItemsContainer" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 536.0
+margin_right = 104.0
+margin_bottom = 640.0
+default_icon = ExtResource( 3 )
+
+[node name="StatsContainer" parent="." instance=ExtResource( 8 )]
+
+[node name="HSeparator" parent="." instance=ExtResource( 9 )]
+
+[node name="GridContainer" parent="." instance=ExtResource( 7 )]
+
+[node name="AvailableItemBox" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 13.0
+margin_right = 113.0
+margin_bottom = 100.0
+
+[node name="AvailableItemBox2" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 143.0
+margin_right = 243.0
+margin_bottom = 100.0
+
+[node name="AvailableItemBox3" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 273.0
+margin_right = 373.0
+margin_bottom = 100.0
+
+[node name="AvailableItemBox4" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 403.0
+margin_right = 503.0
+margin_bottom = 100.0
+
+[node name="AvailableItemBox5" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 533.0
+margin_right = 633.0
+margin_bottom = 100.0
+
+[node name="AvailableItemBox6" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 13.0
+margin_top = 120.0
+margin_right = 113.0
+margin_bottom = 220.0
+
+[node name="AvailableItemBox7" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 143.0
+margin_top = 120.0
+margin_right = 243.0
+margin_bottom = 220.0
+
+[node name="AvailableItemBox8" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 273.0
+margin_top = 120.0
+margin_right = 373.0
+margin_bottom = 220.0
+
+[node name="AvailableItemBox9" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 403.0
+margin_top = 120.0
+margin_right = 503.0
+margin_bottom = 220.0
+
+[node name="AvailableItemBox10" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 533.0
+margin_top = 120.0
+margin_right = 633.0
+margin_bottom = 220.0
+
+[node name="AvailableItemBox11" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 13.0
+margin_top = 240.0
+margin_right = 113.0
+margin_bottom = 340.0
+
+[node name="AvailableItemBox12" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 143.0
+margin_top = 240.0
+margin_right = 243.0
+margin_bottom = 340.0
+
+[node name="AvailableItemBox13" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 273.0
+margin_top = 240.0
+margin_right = 373.0
+margin_bottom = 340.0
+
+[node name="AvailableItemBox14" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 403.0
+margin_top = 240.0
+margin_right = 503.0
+margin_bottom = 340.0
+
+[node name="AvailableItemBox15" parent="GridContainer" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 533.0
+margin_top = 240.0
+margin_right = 633.0
+margin_bottom = 340.0

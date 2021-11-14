@@ -1,0 +1,12 @@
+[
+  {
+    "collection": "dungeons",
+    "key": "water",
+    "permission_read": 2,
+    "permission_write": 0,
+    "user_id": "00000000-0000-0000-0000-000000000000",
+    "value": {
+      "duration": 20
+    }
+  }
+]

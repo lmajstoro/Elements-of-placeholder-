@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/fonts/Poppins-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scripts/screens/Home.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 1 )
+
+[node name="Home" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Button" type="Button" parent="."]
+margin_left = 216.568
+margin_top = 680.433
+margin_right = 499.568
+margin_bottom = 781.433
+
+[node name="Label" type="Label" parent="."]
+margin_left = 62.0
+margin_top = 95.0
+margin_right = 671.0
+margin_bottom = 530.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )

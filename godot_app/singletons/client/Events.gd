@@ -1,0 +1,7 @@
+extends Node
+
+signal gem_btn_pressed
+signal character_btn_pressed
+signal dungeon_btn_pressed
+signal pet_btn_pressed
+signal home_btn_pressed

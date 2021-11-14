@@ -1,10 +1,10 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://Assets/BackIcon.png" type="Texture" id=1]
-[ext_resource path="res://Assets/Button.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Fonts/Poppins-Regular.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Assets/Fonts/Poppins-SemiBold.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://Assets/pink_btn.tres" type="Theme" id=5]
+[ext_resource path="res://assets/icons/BackIcon.png" type="Texture" id=1]
+[ext_resource path="res://assets/Button.png" type="Texture" id=2]
+[ext_resource path="res://assets/fonts/Poppins-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/fonts/Poppins-SemiBold.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/pink_btn.tres" type="Theme" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 4 )
@@ -23,7 +23,7 @@ size = 14
 font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=5]
-size = 35
+size = 34
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=6]
@@ -33,20 +33,18 @@ font_data = ExtResource( 3 )
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 1.43201
-margin_top = -0.454689
-margin_right = 1.43201
-margin_bottom = -0.454712
+margin_right = -342.0
+margin_bottom = -638.0
 theme = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -0.698303
-margin_top = -1.05261
-margin_right = 358.302
-margin_bottom = 719.947
+margin_left = 1.05396
+margin_top = 0.810791
+margin_right = 379.054
+margin_bottom = 641.811
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -56,9 +54,9 @@ anchor_left = 0.5
 anchor_top = 0.932
 anchor_right = 0.5
 anchor_bottom = 0.932
-margin_left = -166.015
+margin_left = -167.35
 margin_top = -116.641
-margin_right = 164.985
+margin_right = 163.65
 margin_bottom = -29.6409
 texture_normal = ExtResource( 2 )
 __meta__ = {
@@ -94,9 +92,9 @@ __meta__ = {
 [node name="TitleLbl" type="Label" parent="."]
 anchor_left = 0.497
 anchor_right = 0.497
-margin_left = -50.2
+margin_left = -49.2561
 margin_top = 21.5616
-margin_right = 43.8
+margin_right = 44.7439
 margin_bottom = 48.5616
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.0901961, 0.0901961, 0.0901961, 1 )
@@ -111,9 +109,9 @@ anchor_top = 0.482
 anchor_right = 0.5
 anchor_bottom = 0.482
 margin_left = -78.8025
-margin_top = -47.2438
+margin_top = -48.433
 margin_right = 24.1975
-margin_bottom = -27.2438
+margin_bottom = -28.433
 custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0.8, 0.8, 0.8, 1 )
 text = "FIRE DUNGEON"
@@ -142,10 +140,10 @@ anchor_left = 0.5
 anchor_top = 0.475
 anchor_right = 0.5
 anchor_bottom = 0.475
-margin_left = -80.2985
-margin_top = -25.2055
-margin_right = 76.7015
-margin_bottom = 24.7945
+margin_left = -80.0
+margin_top = -24.95
+margin_right = 75.0
+margin_bottom = 23.05
 custom_fonts/font = SubResource( 5 )
 custom_colors/font_color = Color( 0.0901961, 0.0901961, 0.0901961, 1 )
 text = "Firelands"
@@ -156,10 +154,10 @@ __meta__ = {
 [node name="UIRunTime" type="Label" parent="."]
 anchor_top = 0.576
 anchor_bottom = 0.576
-margin_left = 50.8
-margin_top = -9.67004
-margin_right = 153.8
-margin_bottom = 10.33
+margin_left = 43.6647
+margin_top = -12.0485
+margin_right = 146.665
+margin_bottom = 7.95157
 custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 0.0901961, 0.0901961, 0.0901961, 1 )
 text = "Run time:"
@@ -168,10 +166,10 @@ __meta__ = {
 }
 
 [node name="UIGold" type="Label" parent="."]
-margin_left = 50.5221
-margin_top = 490.523
-margin_right = 167.522
-margin_bottom = 510.523
+margin_left = 45.7653
+margin_top = 438.198
+margin_right = 162.765
+margin_bottom = 458.198
 custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 0.0901961, 0.0901961, 0.0901961, 1 )
 text = "Gold:"
@@ -180,10 +178,10 @@ __meta__ = {
 }
 
 [node name="UIGemFragments" type="Label" parent="."]
-margin_left = 50.0
-margin_top = 447.0
-margin_right = 167.0
-margin_bottom = 467.0
+margin_left = 44.054
+margin_top = 394.675
+margin_right = 161.054
+margin_bottom = 414.675
 custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 0.0901961, 0.0901961, 0.0901961, 1 )
 text = "Gem fragments:"
