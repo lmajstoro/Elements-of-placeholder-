@@ -14,16 +14,6 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="Button" type="Button" parent="."]
-margin_left = 216.568
-margin_top = 680.433
-margin_right = 499.568
-margin_bottom = 781.433
-text = "Update dungeon progress"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="ProgressBar" type="ProgressBar" parent="."]
 anchor_left = 0.05
 anchor_top = 0.1

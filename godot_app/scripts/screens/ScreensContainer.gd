@@ -37,7 +37,6 @@ func _show_only_selected_screen(selected_screen_idx:int) -> void:
 			selected_screen = character_screen
 		SCREEN.Dungeon:
 			selected_screen = dungeon_screen
-			selected_screen = dungeon_screen
 		SCREEN.Home:
 			selected_screen = home_screen
 		SCREEN.Pet:
