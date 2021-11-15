@@ -10,8 +10,9 @@ var _socket:NakamaSocket
 
 
 func _ready():
-	yield(authenticate_user(), "completed")
-	yield(connect_to_server(), "completed")
+	pass
+	#yield(authenticate_user(), "completed")
+	#yield(connect_to_server(), "completed")
 	#yield(ServerConnection.write_data_async({"test":"best"}), "completed")
 	#var data = yield(ServerConnection.get_data_async(), "completed")
 

@@ -1,7 +1,7 @@
 extends Control
 
 onready var btn = $Button
-onready var lbl = $Label
+onready var progress_bar = $ProgressBar
 
 
 func _ready():
@@ -14,4 +14,4 @@ func _on_btn_pressed() -> void:
 	if info.is_exception():
 		print("An error occured: %s" % info)
 		return
-	lbl.text = str(parse_json(info.payload))
+	#lbl.text = str(parse_json(info.payload))
