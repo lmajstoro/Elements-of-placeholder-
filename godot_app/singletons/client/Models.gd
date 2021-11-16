@@ -7,6 +7,7 @@ class DungeonProgress extends Model:
 	var progress:float
 	var finished:bool
 	var duration:int
+	var type:String
 
 
 func create_model_from_dict(model:Model, dict:Dictionary) -> Model:

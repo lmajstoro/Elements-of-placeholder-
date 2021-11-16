@@ -8,8 +8,13 @@ var _client := Nakama.create_client(KEY)
 
 var _socket:NakamaSocket
 
+var enable_server_communication:bool = false
+
 
 func _ready():
+	if not enable_server_communication:
+		return
+	
 	yield(authenticate_user(), "completed")
 	yield(connect_to_server(), "completed")
 	#yield(ServerConnection.write_data_async({"test":"best"}), "completed")

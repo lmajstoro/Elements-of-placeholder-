@@ -43,7 +43,7 @@ function get_dungeon_progress(_context)
             local time_elapsed = current_time_in_sec - dp.start_time
             r.progress = (time_elapsed / dungeon_data.duration) * 100
         end
-
+        
         result[idx] = r
         idx = idx + 1
     end
@@ -61,7 +61,7 @@ function get_dungeon_data(key)
     local success, objects = pcall(nk.storage_read, {read_dungeon_storage_object})
 
     if (not success) then
-        nk.logger_error(string.format("storage_write error: %q", result))
+        nk.logger_error(string.format("storage_write error: %q", objects))
         error({ "internal server error", 13 })
     end
 

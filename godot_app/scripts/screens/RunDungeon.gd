@@ -12,6 +12,9 @@ func _on_back_button_pressed() -> void:
 
 
 func _on_run_dungeon_btn_pressed() -> void:
+	if not ServerConnection.enable_server_communication:
+		return
+	
 	var rpc_id = "run_dungeon"
 	var info : NakamaAPI.ApiRpc = yield(ServerConnection._client.rpc_async(ServerConnection._session, rpc_id, JSON.print({"key":"water"})), "completed")
 	if info.is_exception():
