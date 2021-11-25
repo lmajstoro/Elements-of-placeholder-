@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://screens/Dungeons.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/screens/Main.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://screens/Gem.tscn" type="PackedScene" id=6]
 [ext_resource path="res://screens/Pet.tscn" type="PackedScene" id=7]
 [ext_resource path="res://screens/Home.tscn" type="PackedScene" id=8]
+[ext_resource path="res://ui_components/general/Header.tscn" type="PackedScene" id=9]
 
 [node name="Main" type="Control"]
 anchor_right = 1.0
@@ -29,9 +30,9 @@ __meta__ = {
 visible = false
 
 [node name="Character" parent="ScreensContainer" instance=ExtResource( 5 )]
-visible = false
 
 [node name="Dungeons" parent="ScreensContainer" instance=ExtResource( 1 )]
+visible = false
 
 [node name="Gem" parent="ScreensContainer" instance=ExtResource( 6 )]
 visible = false
@@ -40,5 +41,7 @@ visible = false
 visible = false
 
 [node name="ScreenBottomBar" parent="." instance=ExtResource( 3 )]
-anchor_top = 0.92
+anchor_top = 0.91
 anchor_bottom = 1.0
+
+[node name="Header" parent="." instance=ExtResource( 9 )]

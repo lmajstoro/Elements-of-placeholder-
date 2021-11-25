@@ -1,19 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
+[ext_resource path="res://assets/ui/invertory_slot_empty.png" type="Texture" id=1]
 [ext_resource path="res://scripts/ui_components/character/EquippedItemBox.gd" type="Script" id=2]
 
-[sub_resource type="StyleBoxFlat" id=1]
-bg_color = Color( 0.65098, 0.65098, 0.65098, 1 )
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color( 0.345098, 0.345098, 0.345098, 1 )
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
-shadow_size = 2
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 354, 354 )
 
 [node name="AvailableItemBox" type="Control"]
 anchor_right = 0.25

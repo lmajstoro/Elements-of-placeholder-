@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://ui_components/general/SingleSeparator.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/fonts/Poppins-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.137255, 0.188235, 0.223529, 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxLine" id=1]
+color = Color( 0.137255, 0.188235, 0.223529, 1 )
+thickness = 7
+
+[node name="Header" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 0.07
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 0.75
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 0.9
+custom_fonts/font = SubResource( 3 )
+text = "Character"
+align = 1
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SingleSeparator" type="HSeparator" parent="." instance=ExtResource( 1 )]
+anchor_top = 0.7
+anchor_right = 1.0
+anchor_bottom = 0.95
+margin_bottom = -3.8147e-06
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/separator = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

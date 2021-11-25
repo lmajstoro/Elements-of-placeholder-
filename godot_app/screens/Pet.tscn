@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/pets/water_dragon.png" type="Texture" id=1]
-[ext_resource path="res://ui_components/general/HSeparator.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ui_components/general/DoubleSeparator.tscn" type="PackedScene" id=2]
 [ext_resource path="res://ui_components/general/GridContainer.tscn" type="PackedScene" id=3]
 [ext_resource path="res://ui_components/character/AvailableItemBox.tscn" type="PackedScene" id=4]
 [ext_resource path="res://ui_components/general/StatsContainer.tscn" type="PackedScene" id=5]

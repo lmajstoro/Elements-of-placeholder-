@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="StyleBoxLine" id=1]
+color = Color( 0.137255, 0.188235, 0.223529, 1 )
+thickness = 5
+
+[node name="DoubleSeparator" type="VBoxContainer"]
+anchor_top = 0.62
+anchor_right = 1.0
+anchor_bottom = 0.63
+margin_top = 0.400024
+margin_right = 0.119934
+margin_bottom = 0.47998
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="."]
+margin_right = 720.0
+margin_bottom = 4.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/separator = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator2" type="HSeparator" parent="."]
+margin_top = 8.0
+margin_right = 720.0
+margin_bottom = 12.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/separator = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
